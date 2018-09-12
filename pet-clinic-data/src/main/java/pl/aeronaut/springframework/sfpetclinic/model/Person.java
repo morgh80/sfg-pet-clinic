@@ -1,4 +1,4 @@
-package pl.aeronaut.sfgpetclinic.model;
+package pl.aeronaut.springframework.sfpetclinic.model;
 
 public class Person {
     private String firstName;
