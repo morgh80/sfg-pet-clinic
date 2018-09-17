@@ -1,11 +1,13 @@
 package pl.aeronaut.springframework.sfpetclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import pl.aeronaut.springframework.sfpetclinic.model.Vet;
-import pl.aeronaut.springframework.sfpetclinic.services.CrudService;
+import pl.aeronaut.springframework.sfpetclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+@Service
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {
@@ -28,7 +30,7 @@ public class VetServiceMap extends AbstractMapService<Vet, Long> implements Crud
     }
 
     @Override
-    public void deletById(Long id) {
+    public void deleteById(Long id) {
         super.deleteById(id);
     }
 }

@@ -4,4 +4,6 @@ import pl.aeronaut.springframework.sfpetclinic.model.Owner;
 
 public interface OwnerService extends CrudService<Owner, Long> {
 
+    Owner findByLastName(String name);
+
 }
